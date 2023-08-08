@@ -1,0 +1,13 @@
+file_format: "1"
+id: pla_nck
+name: PLA_NCK
+type: shield
+url: https://github.com/shanna/pla-nck
+requires: [pro_micro]
+exposes: [i2c_oled]
+features:
+  - keys
+  - display
+siblings:
+  - pla_nck_left
+  - pla_nck_right

@@ -1,0 +1,19 @@
+# Copyright (c) 2020 The ZMK Contributors
+# SPDX-License-Identifier: MIT
+
+if SHIELD_PLA_NCK_LEFT
+
+config ZMK_KEYBOARD_NAME
+	default "PLA-NCK"
+
+config ZMK_SPLIT_BLE_ROLE_CENTRAL
+	default y
+
+endif
+
+if SHIELD_PLA_NCK_LEFT || SHIELD_PLA_NCK_RIGHT
+
+config ZMK_SPLIT
+	default y
+
+endif
