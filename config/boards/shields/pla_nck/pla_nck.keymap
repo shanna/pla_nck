@@ -11,10 +11,28 @@
 
         default_layer {
             bindings = <
-&kp TAB   &kp Q     &kp W    &kp E     &kp R     &kp T                     &kp Y     &kp U    &kp I     &kp O     &kp P    &kp BSLH
-&kp LCTRL &kp A     &kp S    &kp D     &kp F     &kp G                     &kp H     &kp J    &kp K     &kp L     &kp SEMI &kp SQT
-&kp LSHFT &kp Z     &kp X    &kp C     &kp V     &kp B                     &kp N     &kp M    &kp COMMA &kp DOT   &kp FSLH &kp RET
-&kp LCTRL &kp LGUI  &kp LALT &kp GRAVE &kp EQUAL &kp BSPC                  &kp SPACE &kp LBKT &kp RBKT  &kp MINUS &kp HOME &kp END
+&kp ESC       &kp Q     &kp W     &kp E     &kp R    &kp T                     &kp Y     &kp U    &kp I     &kp O     &kp P    &none
+&kp TAB       &kp A     &kp S     &kp D     &kp F    &kp G                     &kp H     &kp J    &kp K     &kp L     &kp SEMI &kp SQT
+&kp LSHFT     &kp Z     &kp X     &kp C     &kp V    &kp B                     &kp N     &kp M    &kp COMMA &kp DOT   &kp FSLH &kp RET
+&kp C_AL_LOCK &kp LCTRL &kp LGUI  &kp LALT  &mo 1    &kp BSPC                  &kp SPACE &mo 2    &kp LEFT  &kp DOWN  &kp UP   &kp RIGHT
+            >;
+        };
+
+        lower_layer {
+            bindings = <
+&kp F1        &kp F2    &kp F3    &kp F4    &kp F5     &kp F6                    &kp PLUS  &kp MINUS &kp F9          &kp LBKT  &kp RBKT  &kp PIPE
+&kp GRAVE     &kp EXCL  &kp AT    &kp HASH  &kp DOLLAR &kp PRCNT                 &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR  &kp RPAR  &kp TILDE 
+&kp TILDE     &kp N1    &kp N2    &kp N3    &kp N4     &kp N5                    &kp N6    &kp N7    &kp N8          &kp N9    &kp N0    &kp BSLH
+&kp C_AL_LOCK &kp LCTRL &kp LGUI  &kp LALT  &trans     &trans                    &trans    &trans    &kp LEFT        &kp DOWN  &kp UP    &kp RIGHT
+            >;
+        };
+
+        upper_layer {
+            bindings = <
+&none         &none     &none    &kp LBKT  &kp RBKT &none                     &none    &kp LC(LEFT) &kp PG_DN    &kp PG_UP &kp LC(RIGHT)  &none
+&none         &none     &none    &kp LPAR  &kp RPAR &none                     &none    &kp LEFT     &kp DOWN     &kp UP    &kp RIGHT      &none
+&none         &none     &none    &kp LBRC  &kp RBRC &none                     &none    &kp LC(FSLH) &kp HOME     &kp END   &kp LC(F)      &kp LS(RET)
+&kp C_AL_LOCK &kp LCTRL &kp LGUI &kp LALT  &trans   &trans                    &trans   &trans       &kp LEFT     &kp DOWN  &kp UP         &kp RIGHT
             >;
         };
     };
