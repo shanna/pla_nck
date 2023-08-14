@@ -5,6 +5,24 @@
 #include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
 
+#define MACRO(name, keys)                 \
+name: name##_macro {                      \
+    label          = #name;               \
+    compatible     = "zmk,behavior-macro";\
+    tap-ms         = <40>;                \
+    wait-ms        = <40>;                \
+    #binding-cells = <0>;                 \
+    bindings       = <keys>;              \
+};
+
+/ {
+    macros {
+        MACRO(vim_q,  &kp COLON &kp Q &kp EXCL)
+        MACRO(vim_s,  &kp COLON &kp X)
+        MACRO(dir_up, &kp DOT &kp DOT &kp FSLH)
+    };
+};
+
 / {
     keymap {
         compatible = "zmk,keymap";
@@ -20,10 +38,10 @@
 
         lower_layer {
             bindings = <
-&kp F1        &kp F2    &kp F3    &kp F4    &kp F5     &kp F6                    &kp PLUS  &kp MINUS &kp F9          &kp LBKT  &kp RBKT  &kp PIPE
-&kp GRAVE     &kp EXCL  &kp AT    &kp HASH  &kp DOLLAR &kp PRCNT                 &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR  &kp RPAR  &kp TILDE 
 &kp TILDE     &kp N1    &kp N2    &kp N3    &kp N4     &kp N5                    &kp N6    &kp N7    &kp N8          &kp N9    &kp N0    &kp BSLH
-&kp C_AL_LOCK &kp LCTRL &kp LGUI  &kp LALT  &trans     &trans                    &trans    &trans    &kp LEFT        &kp DOWN  &kp UP    &kp RIGHT
+&kp GRAVE     &kp EXCL  &kp AT    &kp HASH  &kp DOLLAR &kp PRCNT                 &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR  &kp RPAR  &kp TILDE
+&trans        &kp F1    &kp F2    &kp F3    &kp F4     &kp F5                    &kp PLUS  &kp MINUS &kp EQUAL       &kp LBKT  &kp RBKT  &kp PIPE 
+&kp C_AL_LOCK &kp LCTRL &kp LGUI  &kp LALT  &trans     &trans                    &kp UNDER &trans    &kp LEFT        &kp DOWN  &kp UP    &kp RIGHT
             >;
         };
 
@@ -36,4 +54,5 @@
             >;
         };
     };
-};
+};'
+
