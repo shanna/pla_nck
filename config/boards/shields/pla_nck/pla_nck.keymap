@@ -53,5 +53,24 @@ name: name##_macro {                      \
 &kp C_AL_LOCK &kp LCTRL &kp LGUI &kp LALT  &trans   &trans                    &trans   &trans       &kp LEFT     &kp DOWN  &kp UP         &kp RIGHT
             >;
         };
+
+        adjust_layer {
+            bindings = <
+&none         &none     &none    &none  &none  &none                     &none    &none     &none     &none    &none      &none
+&none         &none     &none    &none  &none  &none                     &none    &none     &none     &none    &none      &none
+&none         &none     &none    &none  &none  &none                     &none    &none     &none     &none    &none      &none
+&bootloader   &sys_reset     &none    &none  &trans &trans                    &trans   &trans    &none     &none    &sys_reset      &bootloader
+            >;
+        };
+    };
+};
+
+/ {
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+        tri_layer {
+            if-layers = <1 2>;
+            then-layer = <3>;
+        };
     };
 };
