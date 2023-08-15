@@ -40,6 +40,15 @@ I'm running ZMK on my nice!nano's. The config/ directory contains all the ZMK co
 
 The makefile expects nix to be installed and runs 'act' the local github actions runner to test the ZMK github actions. It has nowhere to write artifacts out to but is handy for checking your configuration files are valid before uploading them to github.
 
+## Issues
+
+Tolerances are tight, too tight in places, depending on the PCB manufacturer and 3D printer setup and material you print in. I used PLA but I still struggled with shrinkage so tried to hide it with some shadow lines.
+
+* The switch footprint is slightly too tight and can locks on to the switch housing making it hard to hot-swap switches.
+* The plate was a tight fit, again making the switches hard to hot-swap.
+* My attempt at an injection molding style shadow lines could be improved. They just look like gaps between the PCB and case because I made them so deep.
+* It would be cool if the USB and power switch gap was more exact and the PCB lined up with the side of the 3D printed case a bit better. 
+
 ## Gallery
 
 ![PLA_NCK](./images/PXL_20230813_212743325.jpg)
