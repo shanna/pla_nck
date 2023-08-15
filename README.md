@@ -34,8 +34,13 @@ Everything you need is included in this repo I think.
 2. The nice view guard is in case you are worried about shorting your nice view on the battery case material.
 3. I 3D printed the cover without a top and bottom layer using 60% infilled 3D honeycomb pattern. I paused the print at layer 78 to change my matte black PLA out for matte grey. I've included the bambu studio files if you happen to own a Bambu Labs printer or can use the configuration.
 
-## Gallery
+## Firmware
 
+I'm running ZMK on my nice!nano's. The config/ directory contains all the ZMK config you need to match the pin-out and diode direction along with my current key map (which sucks but is a starting point).
+
+The makefile expects nix to be installed and runs 'act' the local github actions runner to test the ZMK github actions. It has nowhere to write artifacts out to but is handy for checking your configuration files are valid before uploading them to github.
+
+## Gallery
 
 ![PLA_NCK](./images/PXL_20230813_212743325.jpg)
 ![PLA_NCK](./images/PXL_20230813_202807724.jpg)
