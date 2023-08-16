@@ -23,7 +23,7 @@ The AliExpress stuff will be hit and miss.
 * PCB and Plate [JLCPCB](https://jlcpcb.com) was much cheaper than PCBWay when I got a quote for the exported gerbers. The quaility was fine.
 * 4xM2 4mm screws.
 * 8xM2 12-14mm screws.
-* 12 x [M2 OD3.2mm 3mm](https://www.aliexpress.com/item/1005003582355741.html) brass hot melt insert nuts.
+* 12 x [M2 OD3.5mm 3mm](https://www.aliexpress.com/item/1005003582355741.html) brass hot melt insert nuts.
 * 3D printer for the case, cover and optional nice view guard.
 
 ## Build
@@ -47,7 +47,7 @@ Tolerances are tight, too tight in places, depending on the PCB manufacturer and
 * The switch footprint is slightly too tight and can locks on to the switch housing making it hard to hot-swap switches.
 * The plate was a tight fit, again making the switches hard to hot-swap.
 * My attempt at an injection molding style shadow lines could be improved. They just look like gaps between the PCB and case because I made them so deep.
-* It would be cool if the USB and power switch gap was more exact and the PCB lined up with the side of the 3D printed case a bit better. 
+* It would be cool if the USB and power switch gap was more exact and the PCB lined up with the side of the 3D printed case a bit better.
 
 ## Gallery
 
