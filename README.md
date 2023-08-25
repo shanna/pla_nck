@@ -34,13 +34,13 @@ Everything you need is included in this repo I think.
 2. The nice view guard is in case you are worried about shorting your nice view on the battery case material.
 3. I 3D printed the cover without a top and bottom layer using 60% infilled 3D honeycomb pattern. I paused the print at layer 78 to change my matte black PLA out for matte grey. I've included the bambu studio files if you happen to own a Bambu Labs printer or can use the configuration.
 
-### V1
+### CAD - V1 3D Printed Case 
 
-Version 1 I tried to add mass by printing the case with 60% infill and hoped it would improve the sound.
+Version 1 I tried to add mass by printing the case with 60% infill in PLA and hoped it would improve the sound. It was better than nothing but a bit too loud for the office.
 
-### V2
+### CAD - V2 3D Printed Case
 
-Version 2 I've simplified the case and printed a mount in TPU that sits between the PCB and plate and bolts directly to the case. Keyboard switch sounds is subjective (some blue use MX blues) but this removed a lot of the high frequency plastic "ping" I wasn't happy with. There is still room for improvement if you have any ideas. I've been experimenting with different foams and TPU inserts in the case to remove more of the high frequencies because I want more "thock" and less "clack".
+Version 2 I've simplified the PLA case and printed a mount in TPU that sits between the PCB and plate and bolts directly to the case. Keyboard switch sounds is subjective (some blue use MX blues) but this removed a lot of the high frequency plastic "ping" I wasn't happy with. There is still room for improvement if you have any ideas. I've been experimenting with different foams and TPU inserts in the case to remove more of the high frequencies because I want more "thock" and less "clack".
 
 ![PLA_NCK](./cad/v2/render.png)
 
