@@ -37,37 +37,37 @@ name: name##_macro {                      \
 
         default_layer {
             bindings = <
-&kp ESC        &kp Q      &kp W     &kp E     &kp R  &kp T              &kp Y            &kp U  &kp I      &kp O     &kp P     &kp BSPC
-&kp TAB        &kp A      &kp S     &kp D     &kp F  &kp G              &kp H            &kp J  &kp K      &kp L     &kp SEMI  &kp SQT
-&kp LSHFT      &kp Z      &kp X     &kp C     &kp V  &kp B              &kp N            &kp M  &kp COMMA  &kp DOT   &kp FSLH  &kp RET
-&kp C_AL_LOCK  &kp LCTRL  &kp LGUI  &kp LALT  &mo 1  &mt HYPER SPACE    &mt HYPER SPACE  &mo 2  &kp LEFT   &kp DOWN  &kp UP    &kp RIGHT
+&kp ESC        &kp Q      &kp W     &kp E     &kp R  &kp T        &kp Y      &kp U  &kp I      &kp O     &kp P     &kp BSPC
+&mt MEH TAB    &kp A      &kp S     &kp D     &kp F  &kp G        &kp H      &kp J  &kp K      &kp L     &kp SEMI  &kp SQT
+&kp LSHFT      &kp Z      &kp X     &kp C     &kp V  &kp B        &kp N      &kp M  &kp COMMA  &kp DOT   &kp FSLH  &kp RET
+&kp C_AL_LOCK  &kp LCTRL  &kp LGUI  &kp LALT  &mo 1  &kp SPACE    &mt SPACE  &mo 2  &kp LEFT   &kp DOWN  &kp UP    &kp RIGHT
             >;
         };
 
         lower_layer {
             bindings = <
-&kp TILDE      &kp N1     &kp N2    &kp N3    &kp N4      &kp N5                    &kp N6     &kp N7     &kp N8           &kp N9    &kp N0    &kp BSLH
-&kp GRAVE      &kp EXCL   &kp AT    &kp HASH  &kp DOLLAR  &kp PRCNT                 &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp TILDE
-&trans         &kp F1     &kp F2    &kp F3    &kp F4      &kp F5                    &kp PLUS   &kp MINUS  &kp EQUAL        &kp LBKT  &kp RBKT  &kp PIPE 
-&kp C_AL_LOCK  &kp LCTRL  &kp LGUI  &kp LALT  &trans      &kp BSPC                  &kp UNDER  &trans     &kp LEFT         &kp DOWN  &kp UP    &kp RIGHT
+&kp TILDE      &kp N1     &kp N2    &kp N3    &kp N4      &kp N5       &kp N6     &kp N7     &kp N8           &kp N9    &kp N0    &kp BSLH
+&kp GRAVE      &kp EXCL   &kp AT    &kp HASH  &kp DOLLAR  &kp PRCNT    &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp TILDE
+&trans         &kp F1     &kp F2    &kp F3    &kp F4      &kp F5       &kp PLUS   &kp MINUS  &kp EQUAL        &kp LBKT  &kp RBKT  &kp PIPE 
+&kp C_AL_LOCK  &kp LCTRL  &kp LGUI  &kp LALT  &trans      &kp BSPC     &kp UNDER  &trans     &kp LEFT         &kp DOWN  &kp UP    &kp RIGHT
             >;
         };
 
         upper_layer {
             bindings = <
-&none          &none      &none     &kp LBKT  &kp RBKT  &none                     &none   &kp LC(LEFT)  &kp PG_DN  &kp PG_UP  &kp LC(RIGHT)  &kp DELETE
-&none          &none      &none     &kp LPAR  &kp RPAR  &none                     &none   &kp LEFT      &kp DOWN   &kp UP     &kp RIGHT      &none
-&trans         &none      &none     &kp LBRC  &kp RBRC  &none                     &none   &kp LC(FSLH)  &kp HOME   &kp END    &kp LC(F)      &kp LS(RET)
-&kp C_AL_LOCK  &kp LCTRL  &kp LGUI  &kp LALT  &trans    &kp BSPC                  &trans  &trans        &kp LEFT   &kp DOWN   &kp UP         &kp RIGHT
+&none          &none      &none     &kp LBKT  &kp RBKT  &none       &none   &kp LC(LEFT)  &kp PG_DN  &kp PG_UP  &kp LC(RIGHT)  &kp DELETE
+&none          &none      &none     &kp LPAR  &kp RPAR  &none       &none   &kp LEFT      &kp DOWN   &kp UP     &kp RIGHT      &none
+&trans         &none      &none     &kp LBRC  &kp RBRC  &none       &none   &kp LC(FSLH)  &kp HOME   &kp END    &kp LC(F)      &kp LS(RET)
+&kp C_AL_LOCK  &kp LCTRL  &kp LGUI  &kp LALT  &trans    &kp BSPC    &trans  &trans        &kp LEFT   &kp DOWN   &kp UP         &kp RIGHT
             >;
         };
 
         adjust_layer {
             bindings = <
-&none        &none       &none  &none  &none   &none                     &none   &none   &none  &none  &none       &none
-&none        &none       &none  &none  &none   &none                     &none   &none   &none  &none  &none       &none
-&trans       &none       &none  &none  &none   &none                     &none   &none   &none  &none  &none       &none
-&bootloader  &sys_reset  &none  &none  &trans  &trans                    &trans  &trans  &none  &none  &sys_reset  &bootloader
+&none        &kp HYPER(Q)  &kp HYPER(W)  &kp HYPER(E)  &kp HYPER(R)  &kp HYPER(T)    &kp HYPER(Y)  &kp HYPER(U)  &kp HYPER(I)      &kp HYPER(O)    &kp HYPER(P)     &kp HYPER(BSPC)
+&none        &kp HYPER(A)  &kp HYPER(S)  &kp HYPER(D)  &kp HYPER(F)  &kp HYPER(G)    &kp HYPER(H)  &kp HYPER(J)  &kp HYPER(K)      &kp HYPER(L)    &kp HYPER(SEMI)  &kp HYPER(SQT)
+&none        &kp HYPER(Z)  &kp HYPER(X)  &kp HYPER(C)  &kp HYPER(V)  &kp HYPER(B)    &kp HYPER(N)  &kp HYPER(M)  &kp HYPER(COMMA)  &kp HYPER(DOT)  &kp HYPER(FSLH)  &kp HYPER(RET)
+&bootloader  &sys_reset    &none         &none         &trans        &trans          &trans        &trans        &none             &none           &sys_reset       &bootloader
             >;
         };
     };
