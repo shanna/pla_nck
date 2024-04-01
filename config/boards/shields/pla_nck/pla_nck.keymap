@@ -64,10 +64,10 @@ name: name##_macro {                      \
 
         adjust_layer {
             bindings = <
-&none        &kp HYPER(Q)  &kp HYPER(W)  &kp HYPER(E)  &kp HYPER(R)  &kp HYPER(T)    &kp HYPER(Y)  &kp HYPER(U)  &kp HYPER(I)      &kp HYPER(O)    &kp HYPER(P)     &kp HYPER(BSPC)
-&none        &kp HYPER(A)  &kp HYPER(S)  &kp HYPER(D)  &kp HYPER(F)  &kp HYPER(G)    &kp HYPER(H)  &kp HYPER(J)  &kp HYPER(K)      &kp HYPER(L)    &kp HYPER(SEMI)  &kp HYPER(SQT)
-&none        &kp HYPER(Z)  &kp HYPER(X)  &kp HYPER(C)  &kp HYPER(V)  &kp HYPER(B)    &kp HYPER(N)  &kp HYPER(M)  &kp HYPER(COMMA)  &kp HYPER(DOT)  &kp HYPER(FSLH)  &kp HYPER(RET)
-&bootloader  &sys_reset    &none         &none         &trans        &trans          &trans        &trans        &none             &none           &sys_reset       &bootloader
+&none        &kp LC(LS(LA(Q)))  &kp LC(LS(LA(W)))  &kp LC(LS(LA(E)))  &kp LC(LS(LA(R)))  &kp LC(LS(LA(T)))    &kp LC(LS(LA(Y)))  &kp LC(LS(LA(U)))  &kp LC(LS(LA(I)))      &kp LC(LS(LA(O)))    &kp LC(LS(LA(P)))     &kp LC(LS(LA(BSPC)))
+&none        &kp LC(LS(LA(A)))  &kp LC(LS(LA(S)))  &kp LC(LS(LA(D)))  &kp LC(LS(LA(F)))  &kp LC(LS(LA(G)))    &kp LC(LS(LA(H)))  &kp LC(LS(LA(J)))  &kp LC(LS(LA(K)))      &kp LC(LS(LA(L)))    &kp LC(LS(LA(SEMI)))  &kp LC(LS(LA(SQT)))
+&none        &kp LC(LS(LA(Z)))  &kp LC(LS(LA(X)))  &kp LC(LS(LA(C)))  &kp LC(LS(LA(V)))  &kp LC(LS(LA(B)))    &kp LC(LS(LA(N)))  &kp LC(LS(LA(M)))  &kp LC(LS(LA(COMMA)))  &kp LC(LS(LA(DOT)))  &kp LC(LS(LA(FSLH)))  &kp LC(LS(LA(RET)))
+&bootloader  &sys_reset         &none              &none              &trans             &trans               &trans             &trans             &none                  &none                &sys_reset            &bootloader
             >;
         };
     };
