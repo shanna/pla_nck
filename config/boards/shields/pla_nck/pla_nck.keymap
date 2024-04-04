@@ -38,9 +38,9 @@ name: name##_macro {                      \
         default_layer {
             bindings = <
 &kp ESC        &kp Q      &kp W     &kp E     &kp R  &kp T        &kp Y      &kp U  &kp I      &kp O     &kp P     &kp BSPC
-&mt MEH TAB    &kp A      &kp S     &kp D     &kp F  &kp G        &kp H      &kp J  &kp K      &kp L     &kp SEMI  &kp SQT
+&mt HYPER TAB  &kp A      &kp S     &kp D     &kp F  &kp G        &kp H      &kp J  &kp K      &kp L     &kp SEMI  &kp SQT
 &kp LSHFT      &kp Z      &kp X     &kp C     &kp V  &kp B        &kp N      &kp M  &kp COMMA  &kp DOT   &kp FSLH  &kp RET
-&kp C_AL_LOCK  &kp LCTRL  &kp LGUI  &kp LALT  &mo 1  &kp SPACE    &kp SPACE  &mo 2  &kp LEFT   &kp DOWN  &kp UP    &kp RIGHT
+&kp C_AL_LOCK  &kp LCTRL  &kp LALT  &kp LGUI  &mo 1  &kp SPACE    &kp SPACE  &mo 2  &kp LEFT   &kp DOWN  &kp UP    &kp RIGHT
             >;
         };
 
@@ -49,7 +49,7 @@ name: name##_macro {                      \
 &kp TILDE      &kp N1     &kp N2    &kp N3    &kp N4      &kp N5       &kp N6     &kp N7     &kp N8           &kp N9    &kp N0    &kp BSLH
 &kp GRAVE      &kp EXCL   &kp AT    &kp HASH  &kp DOLLAR  &kp PRCNT    &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp TILDE
 &trans         &kp F1     &kp F2    &kp F3    &kp F4      &kp F5       &kp PLUS   &kp MINUS  &kp EQUAL        &kp LBKT  &kp RBKT  &kp PIPE 
-&kp C_AL_LOCK  &kp LCTRL  &kp LGUI  &kp LALT  &trans      &kp BSPC     &kp UNDER  &trans     &kp LEFT         &kp DOWN  &kp UP    &kp RIGHT
+&kp C_AL_LOCK  &kp LCTRL  &kp LALT  &kp LGUI  &trans      &kp BSPC     &kp UNDER  &trans     &kp LEFT         &kp DOWN  &kp UP    &kp RIGHT
             >;
         };
 
@@ -58,7 +58,7 @@ name: name##_macro {                      \
 &none          &none      &none     &kp LBKT  &kp RBKT  &none       &none   &kp LC(LEFT)  &kp PG_DN  &kp PG_UP  &kp LC(RIGHT)  &kp DELETE
 &none          &none      &none     &kp LPAR  &kp RPAR  &none       &none   &kp LEFT      &kp DOWN   &kp UP     &kp RIGHT      &none
 &trans         &none      &none     &kp LBRC  &kp RBRC  &none       &none   &kp LC(FSLH)  &kp HOME   &kp END    &kp LC(F)      &kp LS(RET)
-&kp C_AL_LOCK  &kp LCTRL  &kp LGUI  &kp LALT  &trans    &kp BSPC    &trans  &trans        &kp LEFT   &kp DOWN   &kp UP         &kp RIGHT
+&kp C_AL_LOCK  &kp LCTRL  &kp LALT  &kp LGUI  &trans    &kp BSPC    &trans  &trans        &kp LEFT   &kp DOWN   &kp UP         &kp RIGHT
             >;
         };
 
@@ -67,7 +67,7 @@ name: name##_macro {                      \
 &none        &kp LC(LS(LA(Q)))  &kp LC(LS(LA(W)))  &kp LC(LS(LA(E)))  &kp LC(LS(LA(R)))  &kp LC(LS(LA(T)))    &kp LC(LS(LA(Y)))  &kp LC(LS(LA(U)))  &kp LC(LS(LA(I)))      &kp LC(LS(LA(O)))    &kp LC(LS(LA(P)))     &kp LC(LS(LA(BSPC)))
 &none        &kp LC(LS(LA(A)))  &kp LC(LS(LA(S)))  &kp LC(LS(LA(D)))  &kp LC(LS(LA(F)))  &kp LC(LS(LA(G)))    &kp LC(LS(LA(H)))  &kp LC(LS(LA(J)))  &kp LC(LS(LA(K)))      &kp LC(LS(LA(L)))    &kp LC(LS(LA(SEMI)))  &kp LC(LS(LA(SQT)))
 &none        &kp LC(LS(LA(Z)))  &kp LC(LS(LA(X)))  &kp LC(LS(LA(C)))  &kp LC(LS(LA(V)))  &kp LC(LS(LA(B)))    &kp LC(LS(LA(N)))  &kp LC(LS(LA(M)))  &kp LC(LS(LA(COMMA)))  &kp LC(LS(LA(DOT)))  &kp LC(LS(LA(FSLH)))  &kp LC(LS(LA(RET)))
-&bootloader  &sys_reset         &none              &none              &trans             &trans               &trans             &trans             &none                  &none                &sys_reset            &bootloader
+&bootloader  &kp LCTRL          &kp LALT           &kp LGUI           &trans             &trans               &trans             &trans             &none                  &none                &none                 &bootloader
             >;
         };
     };
